@@ -1,4 +1,3 @@
-```markdown
 # Image Classification Dataset
 
 Welcome to the Image Classification Dataset repository! This repository contains a versatile dataset suitable for image classification tasks across various domains. Whether you're working on medical diagnosis, object recognition, or satellite imagery analysis, this dataset provides a diverse collection of labeled images to support your research and development efforts.
