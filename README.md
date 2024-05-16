@@ -1,4 +1,4 @@
-# Image Classification Dataset
+# Image Classification
 
 Welcome to the Image Classification Dataset repository! This repository contains a versatile dataset suitable for image classification tasks across various domains. Whether you're working on medical diagnosis, object recognition, or satellite imagery analysis, this dataset provides a diverse collection of labeled images to support your research and development efforts.
 
@@ -29,9 +29,6 @@ labels_test = np.load("/path/to/labels_test.npy")
 Sure, here's an example of how you could structure a README.md file for your GitHub repository:
 
 ```markdown
-# Skin Cancer Image Classification Dataset
-
-This repository contains a dataset for skin cancer image classification. The dataset consists of images of skin lesions categorized into different classes, suitable for training and evaluating machine learning models for skin cancer classification tasks.
 
 ## Overview
 
