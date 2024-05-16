@@ -26,25 +26,86 @@ labels_test = np.load("/path/to/labels_test.npy")
 # Now you can use feats_train, labels_train, feats_test, and labels_test for training and testing your machine learning models.
 ```
 
+Sure, here's an example of how you could structure a README.md file for your GitHub repository:
+
+```markdown
+# Skin Cancer Image Classification Dataset
+
+This repository contains a dataset for skin cancer image classification. The dataset consists of images of skin lesions categorized into different classes, suitable for training and evaluating machine learning models for skin cancer classification tasks.
+
+## Overview
+
+The dataset is sourced from the ISIC (International Skin Imaging Collaboration) dataset and is organized into the following classes:
+
+- Basal Cell Carcinoma
+- Melanoma
+- Nevus
+- Benign Keratosis
+- No Cancer
+
+Each class contains images collected from various sources, labeled accordingly to the type of skin lesion.
+
+## Usage
+
+You can use this dataset to train machine learning models for skin cancer classification tasks. Here's how you can load and use the dataset in Python:
+
+```python
+import numpy as np
+
+# Load training data
+feats_train = np.load("/content/drive/My Drive/skin_cancer_dataset/check_points/feats_train.npy")
+labels_train = np.load("/content/drive/My Drive/skin_cancer_dataset/check_points/labels_train.npy")
+
+# Load testing data
+feats_test = np.load("/content/drive/My Drive/skin_cancer_dataset/check_points/feats_test.npy")
+labels_test = np.load("/content/drive/My Drive/skin_cancer_dataset/check_points/labels_test.npy")
+
+# Now you can use feats_train, labels_train, feats_test, and labels_test for training and testing your machine learning models.
+```
+
 ## File Structure
 
-The dataset is organized into training and testing sets, with images stored in directories corresponding to their respective classes. Additionally, auxiliary files such as numpy arrays containing image features and labels are provided for easy integration into machine learning pipelines.
+The dataset is organized as follows:
 
-## License and Attribution
+```
+skin_cancer_dataset/
+│
+├── ISIC_Training_Input/
+│   ├── Basal_cell_carcinoma/
+│   │   ├── train/
+│   │   └── test/
+│   ├── Melanoma/
+│   │   ├── train/
+│   │   └── test/
+│   ├── Nevus/
+│   │   ├── train/
+│   │   └── test/
+│   ├── benign_keratosis/
+│   │   ├── train/
+│   │   └── test/
+│   └── no_cancer/
+│       ├── train/
+│       └── test/
+│
+└── check_points/
+    ├── feats_train.npy
+    ├── labels_train.npy
+    ├── feats_test.npy
+    └── labels_test.npy
+```
 
-The images in this dataset are provided under the appropriate licenses and terms of use, which may vary depending on the original data sources. Users are responsible for complying with the terms of these licenses and providing proper attribution when using the dataset for research or other purposes.
+## Note
 
-## Citation
+- Ensure proper attribution to the ISIC dataset when using these images.
+- This dataset is intended for research purposes only.
 
-If you utilize this dataset in your research or projects, please cite the relevant sources and datasets accordingly to acknowledge the original data contributors.
 
-## Contact
 
-For any inquiries, feedback, or issues related to the dataset, please feel free to contact the dataset provider.
+```
+
+Feel free to customize this template according to your specific needs and requirements!
 
 ---
 
 This README.md file provides an overview of the Image Classification Dataset repository and guidelines for using the dataset in your projects. Feel free to explore the dataset and contribute to the advancement of computer vision and machine learning research!
 ```
-
-Feel free to customize this README.md file further to include specific details about your dataset and any additional instructions or information you'd like to provide to users.
